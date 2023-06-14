@@ -117,7 +117,7 @@ def showTeamData(team):
 def matchPlayers(jugadores,equiposAGenerar):
     print("jugadores")
     print(jugadores)
-    
+
     equiposPlayer = generar_combinaciones_jugadores(jugadores,equiposAGenerar)
     equiposIndex = generarNombresEquipo(equiposPlayer)
     print("equiposIndex")
@@ -146,6 +146,11 @@ def matchPlayers(jugadores,equiposAGenerar):
 
     #obtenemos los jugadores del enfrentamiento
     jugadores_equipo1, jugadores_equipo2 = obtener_jugadores_enfrentamiento(enfrentamiento_aleatorio, equiposPlayer, equiposIndex)
+    print("Jugadores del equipo 1:")
+    showTeamData(jugadores_equipo1)
+
+    print("Jugadores del equipo 2:")
+    showTeamData(jugadores_equipo2)
 
     return jugadores_equipo1,jugadores_equipo2
 
@@ -160,8 +165,3 @@ jugadores = [
 equiposAGenerar=3
 umbralPesoXEquipo=1
 jugadores_equipo1, jugadores_equipo2=matchPlayers(jugadores,equiposAGenerar)
-print("Jugadores del equipo 1:")
-showTeamData(jugadores_equipo1)
-
-print("Jugadores del equipo 2:")
-showTeamData(jugadores_equipo2)
