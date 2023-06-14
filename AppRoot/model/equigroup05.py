@@ -123,12 +123,14 @@ def matchPlayers(jugadores,equiposAGenerar):
     print("equiposIndex")
     print(equiposIndex)
     mostrar_jugadores_por_equipo(equiposPlayer,equiposIndex)
-
+    
+    
     #Obtiene los enfrentamientos de todas las combinaciones de jugadores
     enfrentamientos = generar_enfrentamientos(equiposPlayer, equiposIndex)
-    #print("Sin filtro")
+    print("Sin filtro")
     #mostrar_enfrentamientos(enfrentamientos)
-
+    
+    
     #filtramos aquellos enfrentamientos con jugadores que se encuentran en ambos equipos
     enfrentamientos_validos=eliminar_jugadores_duplicados(enfrentamientos,equiposPlayer,equiposIndex)
     print("Filtro jugadores duplicados")
@@ -166,4 +168,5 @@ jugadores = [
 ]
 equiposAGenerar=3
 umbralPesoXEquipo=1
-jugadores_equipo1, jugadores_equipo2=matchPlayers(jugadores,equiposAGenerar)
+#jugadores_equipo1, jugadores_equipo2=matchPlayers(jugadores,equiposAGenerar)
+matchPlayers(jugadores,equiposAGenerar)
