@@ -127,7 +127,7 @@ def matchPlayers(jugadores,equiposAGenerar):
     
     #Obtiene los enfrentamientos de todas las combinaciones de jugadores
     enfrentamientos = generar_enfrentamientos(equiposPlayer, equiposIndex)
-    print("Sin filtro")
+    #print("Sin filtro")
     #mostrar_enfrentamientos(enfrentamientos)
     
     
@@ -168,5 +168,5 @@ jugadores = [
 ]
 equiposAGenerar=3
 umbralPesoXEquipo=1
-#jugadores_equipo1, jugadores_equipo2=matchPlayers(jugadores,equiposAGenerar)
-matchPlayers(jugadores,equiposAGenerar)
+jugadores_equipo1, jugadores_equipo2=matchPlayers(jugadores,equiposAGenerar)
+
