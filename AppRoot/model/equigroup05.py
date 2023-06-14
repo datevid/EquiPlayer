@@ -161,6 +161,8 @@ jugadores = [
     {'nombre': 'Jugador4', 'peso': 4, 'sexo': 'F'},
     {'nombre': 'Jugador5', 'peso': 5, 'sexo': 'M'},
     {'nombre': 'Jugador6', 'peso': 6, 'sexo': 'M'},
+    #{'nombre': 'Jugador7', 'peso': 7, 'sexo': 'M'},
+    #{'nombre': 'Jugador8', 'peso': 8, 'sexo': 'M'},
 ]
 equiposAGenerar=3
 umbralPesoXEquipo=1
